@@ -1,0 +1,100 @@
+.page-footer__container {
+  display: flex;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    justify-content: space-between;
+    padding: 38px 37px 33px 25px;
+  }
+}
+
+.page-footer__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    position: relative;
+    width: 100%;
+    padding: 0 15px 28px;
+    border-bottom: 1px solid transparentize($basic__light-three, 0.8);
+    box-sizing: border-box;
+  }
+}
+
+.page-footer__legend {
+  margin: 0 0 29px;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic__dark;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin: 0;
+    padding-top: 29px;
+  }
+}
+
+.sections-site__button,
+.office__button {
+  display: none;
+  position: absolute;
+  top: -18px;
+  right: 17px;
+  width: 16px;
+  height: 16px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.sections-site__button--closed,
+.office__button--closed {
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    display: block;
+    background-image: url("../img/icons/sprite/plus-icon.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.sections-site__button--opened,
+.office__button--opened {
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    display: block;
+    padding: 0;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $basic__light-four;
+    }
+  }
+}
+
+.sections-site__button--nojs,
+.office__button--nojs {
+  display: none;
+}
+
+.page-footer__container a {
+  font-size: 15px;
+  line-height: 25px;
+  color: $basic__dark;
+  opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    color: $basic__accent;
+    opacity: 1;
+    outline: none;
+  }
+}

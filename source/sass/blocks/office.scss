@@ -1,0 +1,39 @@
+.office {
+  margin-left: 216px;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    margin-left: 20px;
+  }
+}
+
+.office__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.office__list--closed {
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    display: none;
+  }
+}
+
+.office__list--opened,
+.office__list--nojs {
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    display: block;
+    margin-top: 36px;
+  }
+}
+
+.office .office__link--address {
+  &:hover,
+  &:focus {
+    color: $basic__dark;
+    opacity: 0.5;
+  }
+}

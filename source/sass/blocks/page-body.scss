@@ -1,4 +1,6 @@
 .page-body {
+  display: flex;
+  flex-direction: column;
   min-width: 320px;
   height: 100vh;
   margin: 0 auto;

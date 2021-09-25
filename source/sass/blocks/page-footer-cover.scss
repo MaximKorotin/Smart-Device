@@ -1,0 +1,116 @@
+.page-footer__cover {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1412px;
+  margin: 0 auto;
+  padding: 14px 12px 0;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    padding: 28px 15px 0;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    padding: 21px 26px 0 27px;
+  }
+}
+
+.rights,
+.page-footer__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rights {
+  margin-right: 20px;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__cover li {
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $basic__dark;
+}
+
+.page-footer__cover li:not(.page-footer__item--link) {
+  opacity: 0.5;
+}
+
+.rights__item {
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: max-content;
+    height: max-content;
+    margin: 124px auto 0;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    margin-left: -70px;
+  }
+}
+
+.rights__item--protected {
+  margin-right: 59px;
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-max-width) {
+    display: none;
+  }
+}
+
+.page-footer__list {
+  justify-content: space-between;
+  width: 813px;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    width: 100%;
+  }
+}
+
+.page-footer__item {
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    text-align: center;
+  }
+}
+
+.page-footer__item + .page-footer__item {
+  margin-left: 20px;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__item--link {
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin-bottom: 21px;
+  }
+}
+
+.page-footer__link--conditions {
+  opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    color: $basic__accent;
+    opacity: 1;
+    outline: none;
+  }
+}
