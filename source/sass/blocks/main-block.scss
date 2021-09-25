@@ -1,0 +1,151 @@
+.main-block {
+  position: relative;
+  max-width: 1422px;
+  margin: 0 auto;
+  padding: 57px 0 275px 145px;
+  background-image: url("../img/printed-boards-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 713px 655px;
+  background-position: 853px -117px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/printed-boards-desktop@2x.png");
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    padding: 221px 15px 70px;
+    background-image: url("../img/printed-boards-mobile.png");
+    background-size: 631px 483px;
+    background-position: 26px -112px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/printed-boards-mobile@2x.png");
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    padding: 111px 0 164px 88px;
+    background-image: url("../img/printed-boards-tablet.png");
+    background-size: 535px 506px;
+    background-position: 440px -117px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/printed-boards-tablet@2x.png");
+    }
+  }
+}
+
+.main-block h2 {
+  width: 718px;
+  margin: 0 0 27px -72px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $basic__white;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0 27px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    width: 450px;
+    margin: 0 0 29px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+.main-block p {
+  position: relative;
+  width: 718px;
+  margin: 0 0 42px -72px;
+  padding-left: 98px;
+  font-size: 22px;
+  line-height: 35px;
+  color: $basic__white;
+  text-transform: lowercase;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 17px;
+    left: 4px;
+    width: 65px;
+    height: 2px;
+    background-color: $basic__white;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    width: 100%;
+    margin: 0 0 40px;
+    padding-left: 51px;
+    font-size: 16px;
+    line-height: 25px;
+
+    &::before {
+      top: 15px;
+      left: 3px;
+      width: 34px;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    width: 407px;
+    margin: 0 0 55px;
+    padding-left: 51px;
+    font-size: 18px;
+    line-height: 28px;
+
+    &::before {
+      top: 16px;
+      left: 3px;
+      width: 33px;
+    }
+  }
+}
+
+.main-block__button {
+  display: block;
+  width: 407px;
+  margin-left: 26px;
+  padding: 17px 0 19px;
+  background-color: $basic__accent;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basic__white;
+  border-radius: 5px;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    line-height: 0;
+    width: 287px;
+    margin: 0 auto;
+    text-indent: -9999px;
+
+    &::after {
+      content: "Бесплатная консультация";
+      display: block;
+      line-height: initial;
+      text-indent: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    width: 379px;
+    margin-left: 51px;
+  }
+}
