@@ -1,0 +1,121 @@
+.about-company {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px 110px 180px;
+  background-image: url("../img/2005-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 220px 317px;
+  background-position: -30px 5px;
+  box-sizing: border-box;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/2005-desktop@2x.png");
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    padding: 0 15px 65px 17px;
+    background: none;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    padding: 0 25px 83px 210px;
+    background-image: url("../img/2005-tablet.png");
+    background-size: 243px 362px;
+    background-position: 0 -2px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/2005-tablet@2x.png");
+    }
+  }
+}
+
+.about-company h2 {
+  margin: 0 0 22px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin: 0 0 20px -3px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    margin: 0 0 24px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
+.about-company p {
+  margin: 0;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    margin-left: 3px;
+  }
+}
+
+.about-company p + p {
+  margin-top: 19px;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    margin-top: 20px;
+  }
+}
+
+.about-company__description {
+  @media (min-width: $mobile-width) and (max-width: $tablet-max-width) {
+    line-height: 0;
+    text-indent: -9999px;
+
+    &::after {
+      content: "Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог..";
+      display: block;
+
+      line-height: 22px;
+      text-indent: 0;
+    }
+  }
+}
+
+.about-company__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  min-width: 180px;
+  min-height: 45px;
+  margin: 39px 0 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic__accent;
+  border: 1px solid $basic__accent;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    color: $basic__white;
+    border: none;
+    background-color: $basic__accent;
+    outline: none;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    margin: 42px 0 0 3px;
+  }
+}

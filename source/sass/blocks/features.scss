@@ -1,12 +1,12 @@
 .features {
-  padding: 97px 0 110px;
+  padding: 97px 0 90px;
 
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
-    padding: 27px 6px 50px 4px;
+    padding: 27px 6px 47px 4px;
   }
 
   @media (min-width: $tablet-width) and (max-width: 1199px) {
-    padding: 38px 10px 44px;
+    padding: 38px 10px 40px;
   }
 }
 
@@ -27,6 +27,7 @@
   min-height: 299px;
   margin: 15px;
   padding: 39px 42px;
+  background-color: $basic__white;
   border: 1px solid $basic__light-five;
   border-left: 3px solid $basic__accent;
   box-sizing: border-box;

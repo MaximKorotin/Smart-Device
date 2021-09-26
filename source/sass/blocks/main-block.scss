@@ -130,6 +130,16 @@
   color: $basic__white;
   border-radius: 5px;
 
+  &:hover,
+  &:focus {
+    padding: 16px 0 18px;
+    color: $basic__accent;
+    background-color: transparent;
+    border: 1px solid $basic__accent;
+    box-sizing: border-box;
+    outline: none;
+  }
+
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
     line-height: 0;
     width: 287px;

@@ -1,0 +1,25 @@
+.page-main__wrapper {
+  background-image: url("../img/main-triangle-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 1920px 1346px;
+  background-position: 0 -29px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-triangle-desktop@2x.png");
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-max-width) {
+    background-image: url("../img/main-triangle-tablet.png");
+    background-repeat: no-repeat;
+    background-size: 559px 873px;
+    background-position: 211px 89px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-triangle-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    background-position: -120px 652px;
+  }
+}
