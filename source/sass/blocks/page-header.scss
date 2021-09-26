@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
-    background-image: url("../img/main-background-nobile.png");
+    background-image: url("../img/main-background-mobile.png");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main-background-mobile@2x.png");

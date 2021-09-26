@@ -1,0 +1,245 @@
+.features {
+  padding: 97px 0 110px;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    padding: 27px 6px 50px 4px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    padding: 38px 10px 44px;
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  min-height: 299px;
+  margin: 15px;
+  padding: 39px 42px;
+  border: 1px solid $basic__light-five;
+  border-left: 3px solid $basic__accent;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    padding: 40px 43px 40px 45px;
+    border: none;
+    color: $basic__white;
+    background-color: $basic__accent;
+    outline: none;
+  }
+
+  &--confidentiality {
+    padding-top: 43px;
+
+    &:hover,
+    &:focus {
+      padding: 44px 43px 40px 45px;
+    }
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    width: 100%;
+    min-height: 232px;
+    margin: 10px;
+    padding: 24px 12px 23px 25px;
+    border-left: 2px solid $basic__accent;
+
+    &:hover,
+    &:focus {
+      padding: 25px 13px 24px 27px;
+      border: none;
+      color: $basic__white;
+      background-color: $basic__accent;
+      outline: none;
+    }
+
+    &--timing {
+      padding-right: 13px;
+
+      &:hover,
+      &:focus {
+        padding-right: 14px;
+      }
+    }
+
+    &--suppliers {
+      padding-bottom: 27px;
+
+      &:hover,
+      &:focus {
+        padding-bottom: 28px;
+      }
+    }
+
+    &--confidentiality {
+      padding-top: 24px;
+
+      &:hover,
+      &:focus {
+        padding-top: 25px;
+      }
+    }
+
+    &--personalization {
+      margin-left: 11px;
+      padding-bottom: 20px;
+
+      &:hover,
+      &:focus {
+        padding-bottom: 21px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    width: 345px;
+    min-height: 232px;
+    padding: 23px 20px 19px 25px;
+    border-left: 2px solid $basic__accent;
+
+    &:hover,
+    &:focus {
+      padding: 24px 21px 20px 27px;
+      border: none;
+      color: $basic__white;
+      background-color: $basic__accent;
+      outline: none;
+    }
+
+    &--confidentiality {
+      padding-top: 25px;
+
+      &:hover,
+      &:focus {
+        padding-top: 26px;
+      }
+    }
+  }
+}
+
+.features__item h3 {
+  order: 2;
+  margin: 0 0 16px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $basic__accent;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin-bottom: 9px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+}
+
+.features__item--confidentiality h3 {
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    margin-bottom: 15px;
+  }
+}
+
+.features__item--personalization h3 {
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    margin-bottom: 6px;
+  }
+}
+
+.features__item p {
+  order: 3;
+  margin: 0;
+}
+
+.features__item svg {
+  order: 1;
+  margin-bottom: 20px;
+  color: $basic__accent;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin-bottom: 12px;
+  }
+}
+
+.features__item--timing svg {
+  @media (min-width: $mobile-width) and (max-width: 1199px) {
+    content: url("../img/icons/sprite/small-stopwatch-icon.svg");
+    width: 30px;
+    height: 36px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin-left: 1px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    margin-bottom: 7px;
+  }
+}
+
+.features__item--suppliers svg {
+  @media (min-width: $mobile-width) and (max-width: 1199px) {
+    content: url("../img/icons/sprite/small-hired-icon.svg");
+    width: 32px;
+    height: 32px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    margin-bottom: 11px;
+  }
+}
+
+.features__item--confidentiality svg {
+  @media (min-width: $mobile-width) and (max-width: 1199px) {
+    content: url("../../img/icons/sprite/small-detective-icon.svg");
+    width: 30px;
+    height: 26px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    margin-bottom: 11px;
+    margin-left: 1px;
+  }
+}
+
+.features__item--personalization svg {
+  @media (min-width: $mobile-width) and (max-width: 1199px) {
+    content: url("../../img/icons/sprite/small-tag-icon.svg");
+    width: 32px;
+    height: 32px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    margin-bottom: 11px;
+  }
+}
+
+.features__item:hover h3,
+.features__item:focus h3,
+.features__item:hover svg,
+.features__item:focus svg {
+  color: $basic__white;
+}
