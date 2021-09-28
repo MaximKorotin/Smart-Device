@@ -1,0 +1,299 @@
+.goods-services {
+  padding: 88px 0 113px;
+  background-color: $basic__dark;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    padding: 50px 0 49px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    padding: 50px 0 55px;
+  }
+}
+
+.goods-services > p {
+  max-width: 1200px;
+  margin: 0 auto 37px;
+  padding: 0 15px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $basic__white;
+  box-sizing: border-box;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin: 0 auto 27px;
+    padding: 0 15px 0 25px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    margin: 0 auto 26px;
+    padding: 0 132px 0 25px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
+.goods-services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-max-width) {
+    flex-direction: column;
+  }
+}
+
+.goods-services__item {
+  margin: 15px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    display: flex;
+    justify-content: center;
+    margin: 23px 24px 23px 26px;
+
+    &--production {
+      margin-right: 29px;
+    }
+  }
+}
+
+.goods-services__link {
+  position: relative;
+  display: block;
+  width: 370px;
+  height: 618px;
+  padding: 50px 170px 50px 44px;
+  background-color: $basic__light;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 63px;
+    height: 63px;
+    background-color: $basic__accent;
+    background-image: url("../img/icons/sprite/arrow-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 31px 50%;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    width: 100%;
+    height: 256px;
+    padding: 20px 100px 20px 35px;
+
+    &::after {
+      background-position: 28px 50%;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    width: 100%;
+    height: 256px;
+    padding: 40px 70px 40px 44px;
+  }
+}
+
+.goods-services__item--production .goods-services__link {
+  background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+    url("../img/production-boards-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+      url("../img/production-boards-desktop@2x.jpg");
+  }
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/production-boards-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/production-boards-desktop@2x.jpg");
+    }
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+      url("../img/production-boards-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+        url("../img/production-boards-mobile@2x.jpg");
+    }
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/production-boards-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/production-boards-mobile@2x.jpg");
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+      url("../img/production-boards-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+        url("../img/production-boards-tablet@2x.jpg");
+    }
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/production-boards-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/production-boards-tablet@2x.jpg");
+      }
+    }
+  }
+}
+
+.goods-services__item--mounting .goods-services__link {
+  background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+    url("../img/mounting-boards-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+      url("../img/mounting-boards-desktop@2x.jpg");
+  }
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/mounting-boards-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mounting-boards-desktop@2x.jpg");
+    }
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+      url("../img/mounting-boards-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+        url("../img/mounting-boards-mobile@2x.jpg");
+    }
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/mounting-boards-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/mounting-boards-mobile@2x.jpg");
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+      url("../img/mounting-boards-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+        url("../img/mounting-boards-tablet@2x.jpg");
+    }
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/mounting-boards-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/mounting-boards-tablet@2x.jpg");
+      }
+    }
+  }
+}
+
+.goods-services__item--components .goods-services__link {
+  background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+    url("../img/components-lighting-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+      url("../img/components-lighting-desktop@2x.jpg");
+  }
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/components-lighting-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/components-lighting-desktop@2x.jpg");
+    }
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    padding-top: 30px;
+    background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+      url("../img/components-lighting-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+        url("../img/components-lighting-mobile@2x.jpg");
+    }
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/components-lighting-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/components-lighting-mobile@2x.jpg");
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    padding-top: 50px;
+    background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+      url("../img/components-lighting-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(transparentize($basic__dark, 0.2), transparentize($basic__dark, 0.2)),
+        url("../img/components-lighting-tablet@2x.jpg");
+    }
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/components-lighting-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/components-lighting-tablet@2x.jpg");
+      }
+    }
+  }
+}
+
+.goods-services__link p {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $basic__white;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+    width: 170px;
+  }
+}
+
+.goods-services__link:hover p,
+.goods-services__link:focus p {
+  text-shadow: 0 0 5px $basic__black;
+}
