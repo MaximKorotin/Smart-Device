@@ -43,7 +43,7 @@
     <div class="main-block">
       <h2>Печатные платы</h2>
       <p>Производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a class="main-block__button" href="#form-feedback">Получить бесплатную консультацию</a>
+      <a class="main-block__button" href="#feedback">Получить бесплатную консультацию</a>
     </div>
   </header>
 
@@ -113,6 +113,35 @@
           </a>
         </li>
       </ul>
+    </section>
+
+    <section class="feedback" id="feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <div class="feedback__wrapper">
+        <p>Остались вопросы? Задайте их нам!</p>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <div class="feedback-form__wrapper">
+            <div class="feedback-form__container">
+              <label class="visually-hidden" for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Имя" required minlength="1">
+            </div>
+            <div class="feedback-form__container">
+              <label class="visually-hidden" for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" pattern="^[+-?\d?()?\s]{11,18}$" placeholder="Телефон" required>
+            </div>
+          </div>
+          <label class="visually-hidden" for="question">Имя</label>
+          <textarea id="question" name="question" placeholder="Ваш вопрос" minlength="1"></textarea>
+          <div class="feedback-form__wrap">
+            <div class="feedback-form__envelope">
+              <input class="input-agreement visually-hidden" type="checkbox" id="agreement" name="agreement" value="agreement" required>
+              <label class="label-agreement" for="agreement">Я согласен на обработку персональных данных</label>
+            </div>
+            <button class="feedback-form__button" type="submit">Задать вопрос</button>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
 

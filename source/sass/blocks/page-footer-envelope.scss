@@ -5,7 +5,7 @@
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px 42px;
+    padding: 0 15px 46px;
     border-bottom: 1px solid transparentize($basic__light-three, 0.8);
     box-sizing: border-box;
   }
@@ -13,7 +13,7 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     display: flex;
     justify-content: space-between;
-    padding: 0 24px 26px 25px;
+    padding: 0 24px 25px 25px;
     border-bottom: 1px solid transparentize($basic__light-three, 0.8);
   }
 }
@@ -38,10 +38,18 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin-top: -8px;
+  }
 }
 
 .socials__item {
   margin: 0 16px 16px 0;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    margin: 8px;
+  }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     margin: 11px 0 0;

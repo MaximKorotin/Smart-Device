@@ -1,5 +1,6 @@
 .office {
-  margin-left: 216px;
+  margin-right: 2px;
+  margin-left: 232px;
 
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
     margin-left: 0;
@@ -11,9 +12,13 @@
 }
 
 .office__list {
-  margin: 0;
+  margin: 0 2px 0 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    padding: 0 5px 0 0;
+  }
 }
 
 .office__list--closed {
@@ -26,7 +31,7 @@
 .office__list--nojs {
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
     display: block;
-    margin-top: 36px;
+    margin-top: 33px;
   }
 }
 

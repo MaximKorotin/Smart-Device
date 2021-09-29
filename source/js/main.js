@@ -1,55 +1,53 @@
 (function () {
   const body = document.querySelector('.page-body');
   // const requestButton = body.querySelector('.page-header__request-call');
-  // const feedbackForm = body.querySelector('.feedback-form');
-  // const nameInput = feedbackForm.querySelector('#name');
-  // const phoneInput = feedbackForm.querySelector('#phone');
-  // const questionInput = feedbackForm.querySelector('#question');
+  const feedbackForm = body.querySelector('.feedback-form');
+  const nameInput = feedbackForm.querySelector('#name');
+  const phoneInput = feedbackForm.querySelector('#phone');
+  const questionInput = feedbackForm.querySelector('#question');
   // const success = body.querySelector('.success');
   // const overlay = body.querySelector('.overlay');
-  // const anchors = body.querySelectorAll('.main-nav__link');
+  const anchor = body.querySelector('.main-block__button');
   const sectionsSiteButton = body.querySelector('.sections-site__button');
   const sectionsSiteList = body.querySelector('.sections-site__list');
   const officeButton = body.querySelector('.office__button');
   const officeList = body.querySelector('.office__list');
 
-  // let storageName = '';
-  // let storagePhone = '';
-  // let storageQuestion = '';
+  let storageName = '';
+  let storagePhone = '';
+  let storageQuestion = '';
 
   sectionsSiteButton.classList.remove('sections-site__button--nojs');
   sectionsSiteList.classList.remove('sections-site__list--nojs');
   officeButton.classList.remove('office__button--nojs');
   officeList.classList.remove('office__list--nojs');
 
-  // storageName = localStorage.getItem('name');
-  // storagePhone = localStorage.getItem('phone');
-  // storageQuestion = localStorage.getItem('question');
+  storageName = localStorage.getItem('name');
+  storagePhone = localStorage.getItem('phone');
+  storageQuestion = localStorage.getItem('question');
 
-  // if (storageName) {
-  //   nameInput.value = storageName;
-  // }
+  if (storageName) {
+    nameInput.value = storageName;
+  }
 
-  // if (storagePhone) {
-  //   phoneInput.value = storagePhone;
-  // }
+  if (storagePhone) {
+    phoneInput.value = storagePhone;
+  }
 
-  // if (storageQuestion) {
-  //   questionInput.value = storageQuestion;
-  // }
+  if (storageQuestion) {
+    questionInput.value = storageQuestion;
+  }
 
-  // for (const anchor of anchors) {
-  //   anchor.addEventListener('click', (evt) => {
-  //     evt.preventDefault();
+  anchor.addEventListener('click', (evt) => {
+    evt.preventDefault();
 
-  //     const blockID = anchor.getAttribute('href').substr(1);
+    const blockID = anchor.getAttribute('href').substr(1);
 
-  //     document.getElementById(blockID).scrollIntoView({
-  //       behavior: 'smooth',
-  //       block: 'start',
-  //     });
-  //   });
-  // }
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
 
   // requestButton.addEventListener('click', (evt) => {
   //   evt.preventDefault();

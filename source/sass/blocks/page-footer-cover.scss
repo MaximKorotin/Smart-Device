@@ -1,12 +1,12 @@
 .page-footer__cover {
   display: flex;
   justify-content: space-between;
-  max-width: 1412px;
+  max-width: 1416px;
   margin: 0 auto;
-  padding: 14px 12px 0;
+  padding: 10px 12px 0;
 
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
-    padding: 28px 15px 0;
+    padding: 28px 15px 0 20px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
@@ -25,7 +25,7 @@
 .rights {
   margin-right: 20px;
 
-  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-max-width) {
     margin: 0;
   }
 }
@@ -58,12 +58,12 @@
     position: absolute;
     top: 36px;
     left: 50%;
-    margin-left: -70px;
+    margin-left: -57px;
   }
 }
 
 .rights__item--protected {
-  margin-right: 59px;
+  margin-right: 75px;
 
   @media (min-width: $mobile-width) and (max-width: $tablet-max-width) {
     display: none;
@@ -73,6 +73,7 @@
 .page-footer__list {
   justify-content: space-between;
   width: 813px;
+  margin: 0 4px 0 0;
 
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
     display: flex;
@@ -81,6 +82,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     width: 100%;
+    margin: 0;
   }
 }
 
