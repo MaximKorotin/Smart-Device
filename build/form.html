@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
-  <h1 class="visually-hidden">Сайт производителя печатных плат Smart Device</h1>
+  <h1 class="visually-hidden">Страница с формой обратной связи</h1>
 
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img src="img/logos/logo-header.svg" width="202" height="52" alt="Логотип Smart Device">
       </a>
 
@@ -36,88 +36,21 @@
           </li>
         </ul>
 
-        <a class="page-header__request-call" href="form.html">Заказать звонок</a>
+        <a class="page-header__request-call" href="#feedback-section">Заказать звонок</a>
       </div>
     </div>
 
     <div class="main-block">
       <h2>Печатные платы</h2>
       <p>Производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a class="main-block__button" href="#feedback">Получить бесплатную консультацию</a>
+      <a class="main-block__button" href="#feedback-section">Получить бесплатную консультацию</a>
     </div>
   </header>
 
   <main class="page-main">
-    <div class="page-main__wrapper">
-      <section class="features">
-        <h2 class="visually-hidden">Преимущества</h2>
-
-        <ul class="features__list">
-          <li class="features__item features__item--timing" tabindex="0">
-            <h3>Оперативные сроки</h3>
-            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
-            <svg width="29" height="35" fill="currentColor">
-              <use href="img/icons/sprite/sprite.svg#stopwatch-icon"></use>
-            </svg>
-          </li>
-          <li class="features__item features__item--suppliers" tabindex="0">
-            <h3>Крупные поставщики</h3>
-            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
-            <svg width="35" height="35" fill="currentColor">
-              <use href="img/icons/sprite/sprite.svg#hired-icon"></use>
-            </svg>
-          </li>
-          <li class="features__item features__item--confidentiality" tabindex="0">
-            <h3>Полная конфиденциальность</h3>
-            <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
-            <svg width="36" height="31" fill="currentColor">
-              <use href="img/icons/sprite/sprite.svg#detective-icon"></use>
-            </svg>
-          </li>
-          <li class="features__item features__item--personalization" tabindex="0">
-            <h3>Персонализация стоимости</h3>
-            <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
-            <svg width="35" height="35" fill="currentColor">
-              <use href="img/icons/sprite/sprite.svg#tag-icon"></use>
-            </svg>
-          </li>
-        </ul>
-      </section>
-
-      <section class="about-company">
-        <h2>О компании</h2>
-        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-        <p class="about-company__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-        <a class="about-company__button" href="#">Подробнее</a>
-      </section>
-    </div>
-
-    <section class="goods-services">
-      <h2 class="visually-hidden">Товары и услуги</h2>
-
-      <p>Service Device предлагает следующие товары и услуги</p>
-      <ul class="goods-services__list">
-        <li class="goods-services__item goods-services__item--production">
-          <a class="goods-services__link" href="#">
-            <p>Производство печатных плат</p>
-          </a>
-        </li>
-        <li class="goods-services__item goods-services__item--mounting">
-          <a class="goods-services__link" href="#">
-            <p>Монтаж печатных плат</p>
-          </a>
-        </li>
-        <li class="goods-services__item goods-services__item--components">
-          <a class="goods-services__link" href="#">
-            <p>Комплектующие для светотехники</p>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="feedback" id="feedback">
+    <section class="feedback-section" id="feedback-section">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <div class="feedback__wrapper">
+      <div class="feedback-section__wrapper">
         <p>Остались вопросы? Задайте их нам!</p>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <p>Мы проконсультируем Вас бесплатно</p>
@@ -149,7 +82,7 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__wrap">
         <div class="page-footer__envelope">
-          <a class="page-footer__logo">
+          <a class="page-footer__logo" href="index.html">
             <img src="img/logos/logo-footer.svg" width="216" height="52" alt="Логотип Smart Device">
           </a>
 
@@ -253,47 +186,5 @@
       </ul>
     </div>
   </footer>
-
-  <section class="feedback-popup">
-    <h2 class="visually-hidden">Форма обратной связи</h2>
-    <p>Закажите звонок</p>
-    <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <div class="popup-form__container">
-        <label class="visually-hidden" for="popup-name">Имя</label>
-        <input type="text" id="popup-name" name="popup-name" placeholder="Имя" required="" minlength="1">
-      </div>
-      <div class="popup-form__container">
-        <label class="visually-hidden" for="popup-phone">Телефон</label>
-        <input type="tel" id="popup-phone" name="popup-phone" pattern="^[+-?\d?()?\s]{11,18}$" placeholder="Телефон" required="">
-      </div>
-      <div class="popup-form__container">
-        <label class="visually-hidden" for="popup-question">Ваш вопрос</label>
-        <textarea id="popup-question" name="popup-question" placeholder="Ваш вопрос" minlength="1"></textarea>
-      </div>
-      <div class="popup-form__wrapper">
-        <div class="popup-form__wrap">
-          <input class="popup-input visually-hidden" type="checkbox" id="popup-agreement" name="popup-agreement" value="popup-agreement" required="">
-          <label class="popup-label" for="popup-agreement">Я согласен на обработку персональных данных</label>
-        </div>
-        <button class="popup-form__button" type="submit">Отправить</button>
-      </div>
-    </form>
-    <button class="feedback-popup__close" type="button" aria-label="Закрыть попап"></button>
-  </section>
-
-  <section class="success">
-    <h2 class="visually-hidden">Окно успешной отправки формы</h2>
-    <p>Форма успешно отправлена, спасибо! :)</p>
-    <button class="success__button" type="button">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
-  </section>
-
-  <div class="overlay">
-    <span class="visually-hidden">Оверлей</span>
-  </div>
-
-  <script src="js/main.js"></script>
 </body>
 </html>

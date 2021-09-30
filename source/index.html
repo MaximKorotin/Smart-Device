@@ -36,7 +36,7 @@
           </li>
         </ul>
 
-        <a class="page-header__request-call" href="request-call.html">Заказать звонок</a>
+        <a class="page-header__request-call" href="form.html">Заказать звонок</a>
       </div>
     </div>
 
@@ -131,7 +131,7 @@
               <input type="tel" id="phone" name="phone" pattern="^[+-?\d?()?\s]{11,18}$" placeholder="Телефон" required>
             </div>
           </div>
-          <label class="visually-hidden" for="question">Имя</label>
+          <label class="visually-hidden" for="question">Ваш вопрос</label>
           <textarea id="question" name="question" placeholder="Ваш вопрос" minlength="1"></textarea>
           <div class="feedback-form__wrap">
             <div class="feedback-form__envelope">
@@ -253,6 +253,34 @@
       </ul>
     </div>
   </footer>
+
+  <section class="feedback-popup">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <p>Закажите звонок</p>
+    <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <div class="popup-form__container">
+        <label class="visually-hidden" for="popup-name">Имя</label>
+        <input type="text" id="popup-name" name="popup-name" placeholder="Имя" required minlength="1">
+      </div>
+      <div class="popup-form__container">
+        <label class="visually-hidden" for="popup-phone">Телефон</label>
+        <input type="tel" id="popup-phone" name="popup-phone" pattern="^[+-?\d?()?\s]{11,18}$" placeholder="Телефон" required>
+      </div>
+      <div class="popup-form__container">
+        <label class="visually-hidden" for="popup-question">Ваш вопрос</label>
+        <textarea id="popup-question" name="popup-question" placeholder="Ваш вопрос" minlength="1"></textarea>
+      </div>
+      <div class="popup-form__wrapper">
+        <div class="popup-form__wrap">
+          <input class="popup-input visually-hidden" type="checkbox" id="popup-agreement" name="popup-agreement" value="popup-agreement" required>
+          <label class="popup-label" for="popup-agreement">Я согласен на обработку персональных данных</label>
+        </div>
+        <button class="popup-form__button" type="submit">Отправить</button>
+      </div>
+    </form>
+    <button class="feedback-popup__close" type="button" aria-label="Закрыть попап"></button>
+  </section>
 
   <section class="success">
     <h2 class="visually-hidden">Окно успешной отправки формы</h2>

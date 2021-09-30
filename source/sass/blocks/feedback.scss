@@ -149,7 +149,7 @@
   &:focus {
     padding: 13px 16px 15px;
     background-color: transparent;
-    border:  1px solid $basic__white;
+    border: 1px solid $basic__white;
     outline: none;
   }
 
@@ -191,7 +191,7 @@
   &:focus {
     padding: 11px 16px;
     background-color: transparent;
-    border:  1px solid $basic__white;
+    border: 1px solid $basic__white;
     outline: none;
   }
 
@@ -268,11 +268,11 @@
   }
 }
 
-.input-agreement:checked  + .label-agreement::before {
+.input-agreement:checked + .label-agreement::before {
   border: none;
 }
 
-.input-agreement:checked  + .label-agreement::after {
+.input-agreement:checked + .label-agreement::after {
   position: absolute;
   top: 2px;
   left: 0;
