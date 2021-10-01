@@ -163,4 +163,9 @@
   background-position: 50%;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 }

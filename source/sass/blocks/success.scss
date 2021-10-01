@@ -44,10 +44,25 @@
   height: 17px;
   padding: 0;
   background-color: transparent;
-  background-image: url("../img/icons/cross-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 100%;
   border: 0;
   cursor: pointer;
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 1px;
+    background-color: $basic__black;
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.4;
+  }
 }
