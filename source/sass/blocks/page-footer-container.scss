@@ -21,10 +21,22 @@
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
     position: relative;
     width: 100%;
-    padding: 0 15px 27px;
+    padding: 0;
     border-bottom: 1px solid transparentize($basic__light-three, 0.8);
     box-sizing: border-box;
   }
+}
+
+.sections-site__title--closed,
+.office__title--closed,
+.sections-site__title--opened,
+.office__title--opened {
+  cursor: pointer;
+}
+
+.sections-site__title--nojs,
+.office__title--nojs {
+  cursor: auto;
 }
 
 .page-footer__legend {
@@ -38,26 +50,32 @@
   color: $basic__dark;
 
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
+    position: relative;
+    width: 100%;
     margin: 0;
-    padding-top: 27px;
+    padding: 27px 15px;
+    background-color: transparent;
+    box-sizing: border-box;
+    z-index: 100;
   }
 }
 
-.sections-site__button,
-.office__button {
+.sections-site__span,
+.office__span {
   display: none;
   position: absolute;
-  top: -16px;
+  top: -43px;
   right: 17px;
   width: 16px;
   height: 16px;
   background-color: inherit;
   border: none;
   cursor: pointer;
+  z-index: 1;
 }
 
-.sections-site__button--closed,
-.office__button--closed {
+.sections-site__span--closed,
+.office__span--closed {
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
     display: block;
     background-image: url("../img/icons/sprite/plus-icon.svg");
@@ -65,10 +83,11 @@
   }
 }
 
-.sections-site__button--opened,
-.office__button--opened {
+.sections-site__span--opened,
+.office__span--opened {
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
     display: block;
+    top: -35px;
     padding: 0;
 
     &::after {
@@ -81,8 +100,8 @@
   }
 }
 
-.sections-site__button--nojs,
-.office__button--nojs {
+.sections-site__span--nojs,
+.office__span--nojs {
   display: none;
 }
 

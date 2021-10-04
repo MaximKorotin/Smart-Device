@@ -122,29 +122,38 @@
     <section class="feedback" id="feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <div class="feedback__wrapper">
-        <p>Остались вопросы? Задайте их нам!</p>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>Мы проконсультируем Вас бесплатно</p>
-          <div class="feedback-form__wrapper">
-            <div class="feedback-form__container">
-              <label class="visually-hidden" for="name">Имя</label>
-              <input type="text" id="name" name="name" placeholder="Имя" required="" minlength="1">
+        <div class="feedback__container">
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/paper-airplane.webp 1x, img/paper-airplane@2x.webp 2x">
+            <!-- 1х: 686px; 2x: 1372px -->
+            <img src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png 2x" width="686" height="641" alt="Бумажный самолётик">
+          </picture>
+        </div>
+        <div class="feedback__wrap">
+          <p>Остались вопросы? Задайте их нам!</p>
+          <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>Мы проконсультируем Вас бесплатно</p>
+            <div class="feedback-form__wrapper">
+              <div class="feedback-form__container">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Имя" required="" minlength="1">
+              </div>
+              <div class="feedback-form__container">
+                <label class="visually-hidden" for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" pattern="^[+-?\d?()?\s]{11,18}$" placeholder="Телефон" required="">
+              </div>
             </div>
-            <div class="feedback-form__container">
-              <label class="visually-hidden" for="phone">Телефон</label>
-              <input type="tel" id="phone" name="phone" pattern="^[+-?\d?()?\s]{11,18}$" placeholder="Телефон" required="">
+            <label class="visually-hidden" for="question">Ваш вопрос</label>
+            <textarea id="question" name="question" placeholder="Ваш вопрос" minlength="1"></textarea>
+            <div class="feedback-form__wrap">
+              <div class="feedback-form__envelope">
+                <input class="input-agreement visually-hidden" type="checkbox" id="agreement" name="agreement" value="agreement" required="">
+                <label class="label-agreement" for="agreement">Я согласен на обработку персональных данных</label>
+              </div>
+              <button class="feedback-form__button" type="submit">Задать вопрос</button>
             </div>
-          </div>
-          <label class="visually-hidden" for="question">Ваш вопрос</label>
-          <textarea id="question" name="question" placeholder="Ваш вопрос" minlength="1"></textarea>
-          <div class="feedback-form__wrap">
-            <div class="feedback-form__envelope">
-              <input class="input-agreement visually-hidden" type="checkbox" id="agreement" name="agreement" value="agreement" required="">
-              <label class="label-agreement" for="agreement">Я согласен на обработку персональных данных</label>
-            </div>
-            <button class="feedback-form__button" type="submit">Задать вопрос</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
   </main>
@@ -184,8 +193,8 @@
 
         <div class="page-footer__container">
           <fieldset class="page-footer__fieldset sections-site">
-            <legend class="page-footer__legend sections-site__title">Разделы сайта</legend>
-            <button class="sections-site__button sections-site__button--closed sections-site__button--nojs" type="button" aria-label="Кнопка открытия меню"></button>
+            <legend class="page-footer__legend sections-site__title sections-site__title--closed sections-site__title--nojs">Разделы сайта</legend>
+            <span class="sections-site__span sections-site__span--closed sections-site__span--nojs"></span>
             <ul class="sections-site__list sections-site__list--closed sections-site__list--nojs">
               <li class="sections-site__paragraph">
                 <ul class="sections-site__items">
@@ -220,8 +229,8 @@
           </fieldset>
 
           <fieldset class="page-footer__fieldset office">
-            <legend class="page-footer__legend office__title">Наш офис</legend>
-            <button class="office__button office__button--closed office__button--nojs" type="button" aria-label="Кнопка открытия меню"></button>
+            <legend class="page-footer__legend office__title office__title--closed office__title--nojs">Наш офис</legend>
+            <span class="office__span office__span--closed office__span--nojs"></span>
             <ul class="office__list office__list--closed office__list--nojs">
               <li class="office__item">
                 <a class="office__link office__link--address">г. Мытищи, Олимпийский проспект, д.10</a>
@@ -260,30 +269,32 @@
 
   <section class="feedback-popup">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <p>Закажите звонок</p>
-    <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <div class="popup-form__container">
-        <label class="visually-hidden" for="popup-name">Имя</label>
-        <input type="text" id="popup-name" name="popup-name" placeholder="Имя" required="" minlength="1">
-      </div>
-      <div class="popup-form__container">
-        <label class="visually-hidden" for="popup-phone">Телефон</label>
-        <input type="tel" id="popup-phone" name="popup-phone" pattern="^[+-?\d?()?\s]{11,18}$" placeholder="Телефон" required="">
-      </div>
-      <div class="popup-form__container">
-        <label class="visually-hidden" for="popup-question">Ваш вопрос</label>
-        <textarea id="popup-question" name="popup-question" placeholder="Ваш вопрос" minlength="1"></textarea>
-      </div>
-      <div class="popup-form__wrapper">
-        <div class="popup-form__wrap">
-          <input class="popup-input visually-hidden" type="checkbox" id="popup-agreement" name="popup-agreement" value="popup-agreement" required="">
-          <label class="popup-label" for="popup-agreement">Я согласен на обработку персональных данных</label>
+    <div class="feedback-popup__wrapper">
+      <p>Закажите звонок</p>
+      <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <div class="popup-form__container">
+          <label class="visually-hidden" for="popup-name">Имя</label>
+          <input type="text" id="popup-name" name="popup-name" placeholder="Имя" required="" minlength="1">
         </div>
-        <button class="popup-form__button" type="submit">Отправить</button>
-      </div>
-    </form>
-    <button class="feedback-popup__close" type="button" aria-label="Закрыть попап"></button>
+        <div class="popup-form__container">
+          <label class="visually-hidden" for="popup-phone">Телефон</label>
+          <input type="tel" id="popup-phone" name="popup-phone" pattern="^[+-?\d?()?\s]{11,18}$" placeholder="Телефон" required="">
+        </div>
+        <div class="popup-form__container">
+          <label class="visually-hidden" for="popup-question">Ваш вопрос</label>
+          <textarea id="popup-question" name="popup-question" placeholder="Ваш вопрос" minlength="1"></textarea>
+        </div>
+        <div class="popup-form__wrapper">
+          <div class="popup-form__wrap">
+            <input class="popup-input visually-hidden" type="checkbox" id="popup-agreement" name="popup-agreement" value="popup-agreement" required="">
+            <label class="popup-label" for="popup-agreement">Я согласен на обработку персональных данных</label>
+          </div>
+          <button class="popup-form__button" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button class="feedback-popup__close" type="button" aria-label="Закрыть попап"></button>
+    </div>
   </section>
 
   <section class="success">

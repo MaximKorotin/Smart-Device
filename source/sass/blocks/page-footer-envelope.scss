@@ -1,4 +1,7 @@
 .page-footer__envelope {
+  margin-right: 30px;
+  min-width: fit-content;
+
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
     display: flex;
     flex-direction: column;
@@ -13,6 +16,7 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     display: flex;
     justify-content: space-between;
+    margin: 0;
     padding: 0 24px 25px 25px;
     border-bottom: 1px solid transparentize($basic__light-three, 0.8);
   }
@@ -21,6 +25,7 @@
 .page-footer__logo img {
   display: block;
   margin-bottom: 53px;
+  min-width: fit-content;
 
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
     margin-bottom: 81px;

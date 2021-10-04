@@ -15,18 +15,22 @@
   const success = body.querySelector('.success');
   const overlay = body.querySelector('.overlay');
   const anchor = body.querySelector('.main-block__button');
-  const sectionsSiteButton = body.querySelector('.sections-site__button');
+  const sectionsSiteTitle = body.querySelector('.sections-site__title');
+  const sectionsSiteSpan = body.querySelector('.sections-site__span');
   const sectionsSiteList = body.querySelector('.sections-site__list');
-  const officeButton = body.querySelector('.office__button');
+  const officeTitle = body.querySelector('.office__title');
+  const officeSpan = body.querySelector('.office__span');
   const officeList = body.querySelector('.office__list');
 
   let storageName = '';
   let storagePhone = '';
   let storageQuestion = '';
 
-  sectionsSiteButton.classList.remove('sections-site__button--nojs');
+  sectionsSiteTitle.classList.remove('sections-site__title--nojs');
+  sectionsSiteSpan.classList.remove('sections-site__span--nojs');
   sectionsSiteList.classList.remove('sections-site__list--nojs');
-  officeButton.classList.remove('office__button--nojs');
+  officeTitle.classList.remove('office__title--nojs');
+  officeSpan.classList.remove('office__span--nojs');
   officeList.classList.remove('office__list--nojs');
 
   storageName = localStorage.getItem('name');
@@ -233,51 +237,51 @@
     elem.addEventListener('keydown', mask, false);
   };
 
-  sectionsSiteButton.addEventListener('click', (evt) => {
+  sectionsSiteTitle.addEventListener('click', (evt) => {
     evt.preventDefault();
 
     if (sectionsSiteList.classList.contains('sections-site__list--closed')) {
       sectionsSiteList.classList.remove('sections-site__list--closed');
       sectionsSiteList.classList.add('sections-site__list--opened');
-      sectionsSiteButton.classList.remove('sections-site__button--closed');
-      sectionsSiteButton.classList.add('sections-site__button--opened');
+      sectionsSiteSpan.classList.remove('sections-site__span--closed');
+      sectionsSiteSpan.classList.add('sections-site__span--opened');
       officeList.classList.add('office__list--closed');
       officeList.classList.remove('office__list--opened');
-      officeButton.classList.add('office__button--closed');
-      officeButton.classList.remove('office__button--opened');
+      officeSpan.classList.add('office____span--closed');
+      officeSpan.classList.remove('office____span--opened');
     } else {
       sectionsSiteList.classList.add('sections-site__list--closed');
       sectionsSiteList.classList.remove('sections-site__list--opened');
-      sectionsSiteButton.classList.add('sections-site__button--closed');
-      sectionsSiteButton.classList.remove('sections-site__button--opened');
+      sectionsSiteSpan.classList.add('sections-site__span--closed');
+      sectionsSiteSpan.classList.remove('sections-site__span--opened');
       officeList.classList.add('office__list--closed');
       officeList.classList.remove('office__list--opened');
-      officeButton.classList.add('office__button--closed');
-      officeButton.classList.remove('office__button--opened');
+      officeSpan.classList.add('office__span--closed');
+      officeSpan.classList.remove('office__span--opened');
     }
   });
 
-  officeButton.addEventListener('click', (evt) => {
+  officeTitle.addEventListener('click', (evt) => {
     evt.preventDefault();
 
     if (officeList.classList.contains('office__list--closed')) {
       sectionsSiteList.classList.add('sections-site__list--closed');
       sectionsSiteList.classList.remove('sections-site__list--opened');
-      sectionsSiteButton.classList.add('sections-site__button--closed');
-      sectionsSiteButton.classList.remove('sections-site__button--opened');
+      sectionsSiteSpan.classList.add('sections-site__span--closed');
+      sectionsSiteSpan.classList.remove('sections-site__span--opened');
       officeList.classList.remove('office__list--closed');
       officeList.classList.add('office__list--opened');
-      officeButton.classList.remove('office__button--closed');
-      officeButton.classList.add('office__button--opened');
+      officeSpan.classList.remove('office__span--closed');
+      officeSpan.classList.add('office__span--opened');
     } else {
       sectionsSiteList.classList.add('sections-site__list--closed');
       sectionsSiteList.classList.remove('sections-site__list--opened');
-      sectionsSiteButton.classList.add('sections-site__button--closed');
-      sectionsSiteButton.classList.remove('sections-site__button--opened');
+      sectionsSiteSpan.classList.add('sections-site__span--closed');
+      sectionsSiteSpan.classList.remove('sections-site__span--opened');
       officeList.classList.add('office__list--closed');
       officeList.classList.remove('office__list--opened');
-      officeButton.classList.add('office__button--closed');
-      officeButton.classList.remove('office__button--opened');
+      officeSpan.classList.add('office__span--closed');
+      officeSpan.classList.remove('office__span--opened');
     }
   });
 

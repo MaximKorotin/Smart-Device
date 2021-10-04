@@ -49,6 +49,7 @@
 }
 
 .page-header__logo {
+  min-width: fit-content;
   height: 100%;
 
   @media (min-width: $mobile-width) and (max-width: $tablet-max-width) {
@@ -57,21 +58,29 @@
 
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
     content: url("../img/logos/logo-header-mobile.svg");
+    margin-right: 20px;
   }
 }
 
 .page-header__logo img {
   display: block;
+  min-width: fit-content;
 }
 
 .page-header__container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 4px;
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-max-width) {
+    margin-top: 0;
+  }
 }
 
 .contacts-header {
   display: flex;
   flex-wrap: wrap;
+  max-width: 941px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -86,28 +95,16 @@
 }
 
 .contacts-header__item {
-  margin: 0 44px 0 7px;
+  margin: 13px 44px;
   line-height: 18px;
   color: $basic__white;
 
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
-    margin: 0 12px;
+    margin: 9px 12px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
-    margin: 0 17px;
-  }
-}
-
-.contacts-header__item + .contacts-header__item {
-  margin-left: 44px;
-
-  @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
-    margin-left: 12px;
-  }
-
-  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
-    margin-left: 17px;
+    margin: 16px 17px;
   }
 }
 
@@ -149,6 +146,8 @@
 
 .page-header__request-call {
   width: 180px;
+  min-width: 180px;
+  min-height: 45px;
   margin-left: 5px;
   padding: 14px 0 12px;
   font-family: "Roboto Condensed", "Arial", sans-serif;

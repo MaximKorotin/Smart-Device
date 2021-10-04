@@ -215,7 +215,7 @@
 
 .features__item--confidentiality svg {
   @media (min-width: $mobile-width) and (max-width: 1199px) {
-    content: url("../../img/icons/sprite/small-detective-icon.svg");
+    content: url("../img/icons/sprite/small-detective-icon.svg");
     width: 30px;
     height: 26px;
   }
@@ -228,7 +228,7 @@
 
 .features__item--personalization svg {
   @media (min-width: $mobile-width) and (max-width: 1199px) {
-    content: url("../../img/icons/sprite/small-tag-icon.svg");
+    content: url("../img/icons/sprite/small-tag-icon.svg");
     width: 32px;
     height: 32px;
   }
