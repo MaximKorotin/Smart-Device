@@ -32,25 +32,29 @@
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  max-width: 1567px;
+  max-width: 1527px;
   margin: 0 auto;
-  padding: 33px 80px 173px 76px;
+  padding: 33px 30px 173px 90px;
+  transform: translateX(-30px);
   box-sizing: border-box;
 
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
     max-width: auto;
     padding: 17px 15px 10px 17px;
+    transform: translateX(0);
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     max-width: auto;
     padding: 20px 25px 5px;
+    transform: translateX(0);
   }
 }
 
 .page-header__logo {
   min-width: fit-content;
   height: 100%;
+  margin-left: -4px;
 
   @media (min-width: $mobile-width) and (max-width: $tablet-max-width) {
     margin-left: 0;
@@ -59,6 +63,7 @@
   @media (min-width: $mobile-width) and (max-width: $mobile-max-width) {
     content: url("../img/logos/logo-header-mobile.svg");
     margin-right: 20px;
+    margin-left: 0;
   }
 }
 
